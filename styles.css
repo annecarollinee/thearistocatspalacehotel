@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "AstonScript";
+    src: url("./fonts/Aston Script.ttf");
+}
+@font-face {
+    font-family: "Vogue";
+    src: url("./fonts/Vogue.ttf");
+}
+body{
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.65),
+        rgba(255,255,255,0.65)
+    ),
+    url("imagens/imagem1.jpg");
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    background-color: #000080;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 5px rgba(0,0,0, 0.8);
+    width: 100%;
+    border-bottom: 2px solid #FFDB58;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "AstonScript";
+    color: #FFDB58;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+nav{
+    display: flex;
+    gap: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+nav a:hover{
+    color: #ffec6d;
+}
+.logoimg{
+    width: 80px;
+
+}
+.hero{
+    background: linear-gradient(rgba(5, 5, 98, 0.6),rgba(5, 5, 98, 0.1)), url(imagens/hotel.png);
+    height: 1100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: white;  
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px #000080;
+}
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px #000;
+}
+.botao{
+    background-color: #2d2d90;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 1rem 2rem;
+    border-color: #ffc800;
+    border-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: scale 0.5s;
+}
+.botao:hover{
+    background-color: #465dc7;
+    scale: 0.9;
+}
+.quartos{
+    padding: 4rem 0;
+    color: #020234;
+}
+.section-tittle{
+    text-align: center;
+    font-family: "Vogue";
+    font-size: 4.5rem;
+    margin-bottom: 2.5rem;
+    color: #000;
+    padding: 5rem;
+    text-shadow: 0 0 12px rgba(212,175,55,0.7);
+}
+.quart{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.quarto{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    transition: transform 0.3s;
+}
+.quarto:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.quarto img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+     /*Cobre a div*/
+    object-fit: cover;
+}
+.quarto-content{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.quarto-content h3{
+     font-size: 1.5rem;
+}
+.quarto-content p{
+    color: #474747;
+    flex: 1;
+    text-align: justify;
+}
+.preco{
+  font-size: 1.5rem;
+  color: #080850;
+  font-weight: bold;
+}
+.servicoss{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.servico{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    transition: transform 0.3s;
+}
+.servico:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.servico-content{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.servico-content h3{
+     font-size: 1.5rem;
+}
+.servico-content p{
+    color: #474747;
+    flex: 1;
+    text-align: justify;
+}
+.servico img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.pag{
+    color: #080850;
+    margin-top: auto;
+    align-self: center;
+}
+.avaliacoess{
+    padding: 4rem 1;
+    color: #020234;
+}
+.avaliacoes{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.avaliacao{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #080850;
+    border-radius: 10px;
+    min-width: 250px;     
+    min-height: 280px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+    flex: 1 1 500px; 
+    max-width: 600px;
+}
+.avaliacao:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.avaliacao h3{
+     color: white;
+    margin-bottom: 10px;
+}
+.avaliacao img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: white;
+}
+.avaliacao-content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #ffffff;
+}
+.sobre{
+    padding: 10rem 0;
+}
+.sobre-flex{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    flex: 1;
+    min-width: 1000px;
+    max-height: 1200px;
+    transition: transform 0.3s;
+}
+.sobre-img{
+    flex: 1;
+}
+.sobre-img img{
+    height: 650px;
+    width: 640px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
+    margin-left: 16px;
+    margin-top: 2px;
+}
+.sobre-texto{
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+    text-align: justify;
+}
+.sobre-texto h2{
+    font-size: 1.8rem;
+    font-family: "AstonScript";
+    color: #020234;
+    margin-top: 5px;
+}
+.sobre-texto p{
+    padding: 10px;
+    color: #000;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.beneficios{
+    list-style-type: " ● ";
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.beneficios li{
+    color: #100c22;
+    font-size: 0.9rem;
+    margin-bottom: 1px;
+}
+.fundador{
+    padding: 0.5rem 0;
+}
+.fundador-flex{
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    flex: 1;
+    min-width: 1000px;
+    max-height: 900px;
+    transition: transform 0.3s;
+}
+.fundador-img{
+    flex: 1;
+}
+.fundador-img img{
+    height: 495px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
+    margin-left: 30px;
+    margin-top: 8px;
+}
+.fundador-texto{
+    flex: 1;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+.fundador-texto h2{
+    font-size: 2.5rem;
+    color: #1d084d;
+    padding-bottom: 3rem;
+    margin-left: 3rem;
+}
+.fundador-texto p{
+    color: #08031a;
+    font-size: 1.1rem;
+    margin-right: 30px;
+    text-align: justify;
+}
+.frase{
+    font-style: italic;
+    padding: 1rem;
+}
+.footer{
+    background-color: #080850;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-section{
+    flex: 1;
+    min-width: 200px;
+}
+.footer-section h4{
+    margin-bottom: 1rem;
+    color:  #ffc800;
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid  #ffc800;
+}
+.quart1-tittle{
+    text-align: center;
+    font-family: "Vogue";
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+    color: #000;
+    padding: 1rem;
+    text-shadow: 0 0 12px rgba(212,175,55,0.7);
+}
+.quarto01-flex{
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    flex: 1;
+    min-width: 1000px;
+    max-height: 900px;
+    transition: transform 0.3s;
+}
+.quarto-01{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+    padding: 10px;
+}
+.quarto-01 h2{
+    font-size: 1.8rem;
+    font-family: "AstonScript";
+    color: #020234;
+    margin-top: 5px;
+}
+.quarto-01 h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.quarto-01 p{
+    padding: 10px;
+    color: #000;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.quarto-01 h4{
+    align-items: center;
+}
+.quarto-01 .prc-qrt{
+    text-align: center;
+}
+.quarto-01 button{
+    display: block;
+    margin: 5px auto;
+}
+.coisas-quarto{
+    list-style-type: " ● ";
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.coisas-quarto li{
+    color: #100c22;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.quarto01-img{ 
+    flex: 1;
+    padding: 35px;
+}
+.quarto01-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
+    margin-left: -5px;
+   
+}
+.preco-detalhes{
+  font-size: 1rem;
+  color: #080850;
+  font-weight: bold;
+}
+/* CONFIGURANDO A RESPONSIVIDADE */
+/* MEDIA QUERY: É um recurso do CSS para ajustar elementos conforme a largura da tela */
+/* O BREAKPOINT PARA UM CELULAR É APROXIMADAMENTE 768px */
+@media (max-width: 768px){
+
+    /* HEADER */
+
+    .nav{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .logoimg{
+        width: 60px;
+    }
+
+    /* HERO */
+
+    .hero{
+        height: 70vh;
+        padding: 20px;
+    }
+
+    .hero-content h1{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .hero .botao{
+        font-size: 15px;
+        padding: 12px 20px;
+    }
+
+    /* TITULOS */
+
+    .section-tittle{
+        font-size: 2.5rem;
+        padding: 2rem 0;
+    }
+
+    .quart1-tittle{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    /* QUARTOS */
+
+    .quart{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quarto{
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    /* SERVIÇOS */
+
+    .servicoss{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico{
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    /* AVALIAÇÕES */
+
+    .avaliacao{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .avaliacao img{
+        margin-left: 0;
+    }
+
+    .avaliacao-content{
+        align-items: center;
+    }
+
+    /* SOBRE */
+
+    .sobre{
+        padding: 4rem 0;
+    }
+
+    .sobre-flex{
+        flex-direction: column;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .sobre-img{
+        width: 100%;
+    }
+
+    .sobre-img img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .sobre-texto{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .sobre-texto h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .sobre-texto p{
+        font-size: 1rem;
+    }
+
+    /* BENEFÍCIOS */
+
+    .beneficios{
+        margin-left: 1rem;
+    }
+
+    /* FUNDADOR */
+
+    .fundador-flex{
+        flex-direction: column;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .fundador-img{
+        width: 100%;
+    }
+
+    .fundador-img img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .fundador-texto{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .fundador-texto h2{
+        text-align: center;
+        margin-left: 0;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .fundador-texto p{
+        margin-right: 0;
+    }
+
+    /* PÁGINAS DOS QUARTOS */
+
+    .quarto01-flex{
+        min-width: 0;
+        width: 100%;
+    }
+
+    .quarto01-img{
+        padding: 10px;
+    }
+
+    .quarto01-img img{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .quarto-01{
+        padding: 15px;
+    }
+
+    .quarto-01 h3{
+        font-size: 1.3rem;
+    }
+
+    .quarto-01 p{
+        font-size: 1rem;
+    }
+
+    .coisas-quarto{
+        margin-left: 1rem;
+    }
+
+    /* FOOTER */
+
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section{
+        width: 100%;
+    }
+}
